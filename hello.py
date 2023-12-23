@@ -9,4 +9,5 @@ def hello_world():
 
 @app.route("/resources")
 def resources():
-  return render_template("linkbutton.html")
+  return render_template("linkbutton.html", link=FLASKQUICKSTART, 
+                         text="Get started with Flask")
